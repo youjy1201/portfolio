@@ -1,0 +1,52 @@
+@import 'base';
+
+// 헤더 서식
+header {
+  position: relative;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  z-index: 9999;
+
+  img {
+    width: 50px;
+  }
+}
+
+// 푸터서식
+footer {
+  width: 100%;
+  background: $m_color;
+  text-align: center;
+
+  /* 탑버튼 서식 */
+  .t_btn {
+    display: none;
+    position: fixed;
+    right: 30px;
+    bottom: 50px;
+    width: 40px;
+    height: 40px;
+    padding: 5px;
+    border-radius: 50%;
+    background: $t_color01;
+    color: $m_color;
+    font-size: $fontSize02;
+    box-shadow: 1px 1px 5px 1px #00000034;
+    z-index: 9999;
+  }
+
+  .t_btn i.fas {
+    display: block;
+    color: $m_color;
+  }
+
+  address {
+    color: $t_color01;
+    text-align: center;
+    line-height: 20px;
+    padding: 30px 0;
+  }
+}

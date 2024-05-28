@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      property="og:image"
+      content="https://youjy1201.github.io/portfolio/images/me.jpg"
+    />
+    <meta
+      property="og:description"
+      content="웹 퍼블리셔를 꿈꾸는 유진영입니다."
+    />
+    <title>유진영 포트폴리오</title>
+    <!-- 파비콘 -->
+    <link rel="shortcut icon" type="image/x-icon" href="./images/favicon.jpg" />
+    <!-- 초기화 -->
+    <link rel="stylesheet" href="./css/reset.css" type="text/css" />
+    <!-- 기본서식, 공통서식 -->
+    <link rel="stylesheet" href="./css/base.css" type="text/css" />
+    <link rel="stylesheet" href="./css/common.css" type="text/css" />
+    <!-- 메인서식 -->
+    <link rel="stylesheet" href="./css/main.css" type="text/css" />
+    <!--  wave 서식 -->
+    <link rel="stylesheet" href="./css/wave.css" type="text/css" />
+    <!-- 폰트어썸 -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+    <!-- css 애니메이션 -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <!-- 제이쿼리 -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <!-- 스크롤 이벤트 -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- swiper slide -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <!-- 공통 스크립트 -->
+    <script src="./script/common.js" defer></script>
+    <!-- 메인 스크립트 -->
+    <script src="./script/main.js" defer></script>
+  </head>
+
+  <body>
+    <!-- 헤더 -->
+    <header class="animate__animated animate__fadeInDown">
+      <h1>
+        <a href="index.html" title="메인으로 바로가기">
+          <img src="./images/logo.png" alt="상단 로고" />
+        </a>
+      </h1>
+    </header>
+
+    <!-- 메인 -->
+    <main>
+      <!-- 메인 상단 비주얼 -->
+      <article id="main_visu">
+        <p>Web Publisher RYU JINYOUNG</p>
+        <h2 class="heading">PORTFOLIO</h2>
+        <nav>
+          <ul class="gnb">
+            <li><a href="#about" title="about">About</a></li>
+            <li><a href="#projects" title="projects">Projects</a></li>
+            <li><a href="#contact" title="contact">Contact</a></li>
+          </ul>
+        </nav>
+        <!--하단 웨이브-->
+        <div class="waveWrapper waveAnimation">
+          <div class="waveWrapperInner bgtop">
+            <div class="wave waveTop"></div>
+          </div>
+          <div class="waveWrapperInner bgMiddle">
+            <div class="wave waveMiddle"></div>
+          </div>
+          <div class="waveWrapperInner bgBottom">
+            <div class="wave waveBottom"></div>            
+          </div>
+        </div>
+        <div class="stars"></div>
+
+        <!-- 스크롤 애니메이션 -->
+        <div id="scroll_down">
+          <span class="arrow_down"></span>
+          <span class="scroll_title">SCROLL</span>
+        </div>
+      </article>
+
+      <!--Waves Container-->
+      <div>
+        <svg
+          class="waves"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          viewBox="0 24 150 28"
+          preserveAspectRatio="none"
+          shape-rendering="auto"
+        >
+          <defs>
+            <path
+              id="gentle-wave"
+              d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"
+            />
+          </defs>
+          <g class="parallax">
+            <use
+              xlink:href="#gentle-wave"
+              x="48"
+              y="0"
+              fill="rgba(255,255,255,0.7)"
+            />
+            <use
+              xlink:href="#gentle-wave"
+              x="48"
+              y="3"
+              fill="rgba(255,255,255,0.5)"
+            />
+            <use
+              xlink:href="#gentle-wave"
+              x="48"
+              y="5"
+              fill="rgba(255,255,255,0.3)"
+            />
+            <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
+          </g>
+        </svg>
+      </div>
+      <!--Waves end-->
+
+      <!-- 어바웃 -->
+      <article id="about" class="swiper mySwiper">
+        <h2>ABOUT</h2>
+        <div class="swiper-wrapper">
+          <!-- 내 소개 -->
+          <section class="profile swiper-slide">
+            <h3>ME</h3>
+            <div class="a_title" data-aos="fade-up" data-aos-duration="1000">
+              <p>안녕하세요!</p>
+              <p><span>퍼블리셔</span>를 꿈꾸는</p>
+              <p>유진영입니다.</p>
+            </div>
+            <div class="a_con">
+              <p>저는 끊임없이 생각하는 사람입니다.</p><br>
+              <p>
+                웹 퍼블리셔는 기술적인 업무만이 아니라 디자인 감각과 창의성도 필요하다고 생각합니다.
+              </p>
+              <p>
+                '어떻게 하면 attractive한 사용자 경험을 제공할 수 있을까?'라고 끊임없이 고민합니다.
+              </p>
+              <p>
+                새로운 웹 기술과 트렌드를 학습하고, 최신 도구와 플랫폼에 대한 이해도를 높이겠습니다. 다양한 사회생활 경험을 바탕으로 제 강점인 커뮤니케이션 능력을 발휘해 디자이너, 개발자 및 기타 이해 관계자들과 원활한 의사소통을 유지하여 프로젝트의 효율성과 품질을 높이는 데에 기여하겠습니다.
+              </p>
+              <br>
+              <p>
+                웹 퍼블리셔로서의 역량을 통해 사용자들이 정보를 손쉽게 찾고, 편리하게 상호작용할 수 있는 웹사이트를 구축하는 것이 목표입니다.
+              </p>
+            </div>
+            <div class="tag">
+              <span>#창의력</span>
+              <span>#꾸준함</span>
+              <span>#습득력</span>
+              <span>#섬세함</span>
+              <span>#협력적인</span>
+              <span>#소통</span>
+              <span>#리더십</span>
+            </div>
+            <a
+              href="./file/young_resume.pdf"
+              title="이력서 바로보기"
+              target="_blank"
+              rel="noopener noreferrer"
+              >이력서 바로보기</a
+            >
+          </section>
+          <!-- 스킬 -->
+          <section class="skil swiper-slide">
+            <h3>SKILL</h3>
+            <p>아이콘을 클릭해주세요.</p>
+            <ul>
+              <li data-skil="html">
+                <img src="./images/html5.png" alt="html5 로고" />
+              </li>
+              <li data-skil="css">
+                <img src="./images/css3.png" alt="css3 로고" />
+              </li>
+              <li data-skil="sass">
+                <img src="./images/sass.png" alt="sass 로고" />
+              </li>
+              <li data-skil="javascript">
+                <img src="./images/js.png" alt="js 로고" />
+              </li>
+              <li data-skil="jquery">
+                <img src="./images/jquery.png" alt="jquery 로고" />
+              </li>
+              <li data-skil="react">
+                <img src="./images/react.png" alt="react 로고" />
+              </li>
+              <li data-skil="bootstrap">
+                <img src="./images/bootstrap.png" alt="bootstrap 로고" />
+              </li>
+              <li data-skil="Photoshop">
+                <img src="./images/photoshop.png" alt="photoshop 로고" />
+              </li>
+              <li data-skil="illustrator">
+                <img src="./images/illustrator.png" alt="illustrator 로고" />
+              </li>
+              <li data-skil="github">
+                <img src="./images/github.png" alt="github 로고" />
+              </li>
+              <li data-skil="figma">
+                <img src="./images/figma.png" alt="figma 로고" />
+              </li>
+            </ul>
+          </section>
+          <!-- 로고 -->
+          <section class="logo swiper-slide">
+            <h3>LOGO</h3>
+            <div class="a_title" data-aos="fade-up" data-aos-duration="1000">
+              <p>밤이되면</p>
+              <p>한결같이 자신의 위치를 지키며</p>
+              <p>반짝이는 <span>'별'</span></p>
+            </div>
+            <div class="a_con">
+              <p>별은 오랜 시간 동안 변함없이 빛나며, 다양한 색을 가지고 있습니다.</p>
+              <p>
+                별처럼 꾸준히 성실하게 임하겠습니다. <br>
+                다양한 색깔로 빛나는 별처럼 다채로운 매력을 가진 퍼블리셔가 되겠습니다.
+              </p><br>
+              <p>제 이름에 '영'을 영어로 하면 'young'입니다. <br>
+                최신 트렌드와 기술을 끊임없이 공부하는 맞춤형 퍼블리셔가 되겠습니다.
+              </p>
+            </div>
+          </section>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <!-- 아치형 공간 -->
+        <div class="arch">
+          <!-- 소개 -->
+          <div
+            class="arch_con profile"
+            data-aos="fade-down-right"
+            data-aos-duration="1000"
+          >
+            <img src="./images/me.jpg" alt="증명사진" />
+          </div>
+          <!-- 스킬 -->
+          <div class="arch_con skil hidden">
+            <h3 class="skil_t">
+              저는<br /><span>이런 것들</span>도<br />할 줄 압니다.
+            </h3>
+            <div data-skil="html">
+              <p>웹 표준을 준수하여 마크업 합니다.</p>
+              <p>웹 접근성을 고려한 사용자 친화적인 웹사이트를 지향합니다.</p>
+              <p>주석을 활용하여 보기 편한 코드를 작성하기 위해 노력합니다.</p>
+            </div>
+            <div data-skil="css">
+              <p>미디어 쿼리를 사용하여 반응형 웹을 구현할 수 있습니다.</p>
+              <p>요소에 다양한 애니메이션을 적용할 수 있습니다.</p>
+            </div>
+            <div data-skil="sass">
+              <p>코드를 컴포넌트화하여 모듈 형태로 작업할 수 있습니다.</p>
+              <p>변수와 제어문 사용이 가능합니다.</p>
+            </div>
+            <div data-skil="javascript">
+              <p>es6문법 사용을 지향합니다.</p>
+              <p>event를 활용하여 동적인 효과를 적용할 수 있습니다.</p>
+              <p>javascript의 동기와 비동기 방식에 대해 이해하고 있습니다.</p>
+            </div>
+            <div data-skil="jquery">
+              <p>
+                다양한 종류의 슬라이드, 모달창, 스크롤 이벤트, 아코디언 메뉴
+                등을 구현할 수 있습니다.
+              </p>
+              <p>
+                effect와 animate를 사용하여 동적인 효과를 적용할 수 있습니다.
+              </p>
+            </div>
+            <div data-skil="react">
+              <p>재사용 가능한 컴포넌트를 통해 개발 생산성을 향상합니다.</p>
+              <p>
+                Hook(useState, useEffect...)을 사용하여 함수형 컴포넌트로도
+                다양한 작업이 가능합니다.
+              </p>
+            </div>
+            <div data-skil="bootstrap">
+              <p>그리드 레이아웃을 사용하여 화면을 구성할 수 있습니다.</p>
+              <p>
+                테이블과 페이지네이션을 사용하여 게시판 디자인이 가능합니다.
+              </p>
+            </div>
+            <div data-skil="photoshop">
+              <p>
+                포토샵을 중급 수준으로 다루며, 이미지 편집, 색상 보정, 텍스트 효과 등 다양한 작업을 능숙하게 수행할 수 있습니다.
+              </p>
+              <p>포토샵의 레이어, 필터, 마스크 기능을 활용할 수 있습니다.</p>
+              <p>GTQ 1급 자격증 보유</p>
+            </div>
+            <div data-skil="illustrator">
+              <p>일러스트레이터를 중급 수준으로 다루며, 벡터 일러스트레이션, 로고 디자인, 타이포그래피 작업을 능숙하게 수행할 수 있습니다.</p>
+              <p>
+                또한, 펜 도구를 활용한 정밀한 패스 제작이 가능합니다.
+              </p>
+              <p>GTQi 1급 자격증 보유</p>
+            </div>
+            <div data-skil="github">
+              <p>코드버전 관리와 협업을 할 수 있습니다.</p>
+            </div>
+            <div data-skil="figma">
+              <p>반응형 레이아웃을 짤 수 있습니다.</p>
+              <p>스타일, 컴포넌트 사용과 프로토타입 제작이 가능합니다.</p>
+            </div>
+          </div>
+          <!-- 로고 -->
+          <div class="arch_con logo hidden">
+            <img src="./images/a_logo.png" alt="로고" />
+            <dl>
+              <dt>별</dt>
+              <dd>다양한 색깔로 빛나는 별처럼 다채로운 매력으로 주변을 밝힙니다.</dd>
+              <dt>빛</dt>
+              <dd>
+                항해자들에게 길을 안내하는 북극성처럼 언제나 올바른 방향을 제시하고, 함께 나아갑니다.
+              </dd>
+              <dt>YOUNG함</dt>
+              <dd>
+                항상 최신 트렌드를 파악하고, 기술을 접목시켜 attractive한 사용자 경험을 제공하겠습니다.
+              </dd>
+            </dl>
+          </div>
+        </div>
+      </article>
+
+      <!-- 프로젝트 -->
+      <article id="projects">
+        <h2>PROJECTS</h2>
+        <div class="category">
+          <label for="all">ALL</label>
+          <label for="personal">PERSONAL</label>
+          <label for="team">TEAM</label>
+          <span class="line">&nbsp;</span>
+
+          <div class="year">
+            <span>2022</span>
+            <span>2024</span>
+          </div>
+        </div>
+
+        <div class="project">
+          <input type="radio" id="all" name="cate" checked />
+          <input type="radio" id="personal" name="cate" />
+          <input type="radio" id="team" name="cate" />
+
+          <!-- 미에로 -->
+          <section class="unit personal miero" data-id="miero">
+            <h3>미에로화이바 페이지 제작</h3>
+            <div class="p_top">
+              <p>적응형 PC 페이지 제작</p>
+              <p>Personal Project / 24.03.11 - 24.03.18</p>
+            </div>
+            <div class="p_img">
+              <img
+                src="./images/miero.jpg"
+                alt="미에로 목업"
+                class="mockup"
+              />
+              <span class="arrow"
+                ><img src="./images/arrow.png" alt="화살표"
+              /></span>
+            </div>
+            <div class="p_bottom">
+              <div>
+                <p><span>사용 언어</span>HTML CSS JAVASCRIPT JQUERY</p>
+                <p class="color">
+                  <span>컬러</span><span></span><span></span><span></span>
+                </p>
+                <p><span>키워드</span>#즐거운 #긍정적인 #개성있는</p>
+              </div>
+              <p>More Detail</p>
+            </div>
+          </section>
+          <!-- 캐논아카데미 사용자 -->
+          <section class="unit team canon" data-id="canon_user">
+            <h3>캐논아카데미 홈페이지 리뉴얼</h3>
+            <div class="p_top">
+              <p>LMS 사용자 페이지 제작</p>
+              <p>Team Project / 23.04.27 - 23.05.19</p>
+            </div>
+            <div class="p_img">
+              <img
+                src="./images/canon_user.jpg"
+                alt="캐논 사용자 목업"
+                class="mockup"
+              />
+              <span class="arrow"
+                ><img src="./images/arrow.png" alt="화살표"
+              /></span>
+            </div>
+            <div class="p_bottom">
+              <div>
+                <p><span>사용 언어</span>HTML CSS PHP JAVASCRIPT</p>
+                <p class="color">
+                  <span>컬러</span><span></span><span></span><span></span>
+                </p>
+                <p><span>키워드</span>#즐거운 #소통하는 #신뢰적인</p>
+              </div>
+              <p>More Detail</p>
+            </div>
+          </section>
+
+          <!-- 캐논아카데미 관리자 -->
+          <section class="unit team canon" data-id="canon_admin">
+            <h3>캐논아카데미 홈페이지 리뉴얼</h3>
+            <div class="p_top">
+              <p>LMS 관리자 페이지 제작</p>
+              <p>Team Project / 23.03.28 - 23.04.18</p>
+            </div>
+            <div class="p_img">
+              <img
+                src="./images/canon_admin.jpg"
+                alt="캐논 관리자 목업"
+                class="mockup"
+              />
+              <span class="arrow"
+                ><img src="./images/arrow.png" alt="화살표"
+              /></span>
+            </div>
+            <div class="p_bottom">
+              <div>
+                <p><span>사용 언어</span>HTML CSS PHP JAVASCRIPT</p>
+                <p class="color">
+                  <span>컬러</span><span></span><span></span><span></span>
+                </p>
+                <p><span>키워드</span>#즐거운 #소통하는 #신뢰적인</p>
+              </div>
+              <p>More Detail</p>
+            </div>
+          </section>
+
+          <!-- 하나 -->
+          <section class="unit team hana" data-id="hana">
+            <h3>하나금융지주 홈페이지 리뉴얼</h3>
+            <div class="p_top">
+              <p>대기업 사이트 적응형웹 제작</p>
+              <p>Team Project / 23.02.06 - 23.03.15</p>
+            </div>
+            <div class="p_img">
+              <img src="./images/hana.jpg" alt="하나 목업" class="mockup" />
+              <span class="arrow"
+                ><img src="./images/arrow.png" alt="화살표"
+              /></span>
+            </div>
+            <div class="p_bottom">
+              <div>
+                <p><span>사용 언어</span>HTML CSS PHP JAVASCRIPT</p>
+                <p class="color"><span>컬러</span><span></span><span></span><span></span></p>
+                <p><span>키워드</span>#실용적인 #신뢰적인 #모던한</p>
+              </div>
+              <p>More Detail</p>
+            </div>
+          </section>
+
+          <!-- lg생활건강 -->
+          <section class="unit personal lg" data-id="lg">
+            <h3>LG 생활건강 홈페이지 리뉴얼</h3>
+            <div class="p_top">
+              <p>브랜드 사이트 반응형웹 제작</p>
+              <p>Personal Project / 23.02.08 - 23.02.15</p>
+            </div>
+            <div class="p_img">
+              <img
+                src="./images/lg.jpg"
+                alt="lg생활건강 목업"
+                class="mockup"
+              />
+              <span class="arrow"
+                ><img src="./images/arrow.png" alt="화살표"
+              /></span>
+            </div>
+            <div class="p_bottom">
+              <div>
+                <p><span>사용 언어</span>HTML CSS JAVASCRIPT</p>
+                <p class="color"><span>컬러</span><span></span><span></span></p>
+                <p><span>키워드</span>#도시적인 #실용적인 #심플한</p>
+              </div>
+              <p>More Detail</p>
+            </div>
+          </section>
+
+          <!-- 티지아이 -->
+          <section class="unit team tgi" data-id="tgi">
+            <h3>TGI FRIDAYS 홈페이지 리뉴얼</h3>
+            <div class="p_top">
+              <p>브랜드 사이트 반응형웹 제작</p>
+              <p>Team Project / 22.12.20 - 23.01.20</p>
+            </div>
+            <div class="p_img">
+              <img src="./images/tgi.jpg" alt="tgi 목업" class="mockup" />
+              <span class="arrow"
+                ><img src="./images/arrow.png" alt="화살표"
+              /></span>
+            </div>
+            <div class="p_bottom">
+              <div>
+                <p><span>사용 언어</span>HTML CSS JAVASCRIPT</p>
+                <p class="color">
+                  <span>컬러</span><span></span><span></span><span></span>
+                </p>
+                <p><span>키워드</span>#모던한 #친근한 #소통하는</p>
+              </div>
+              <p>More Detail</p>
+            </div>
+          </section>
+        </div>
+      </article>
+
+      <!-- 컨택 -->
+      <article id="contact">
+        <h2>CONTACT</h2>
+        <div class="con_wrap">
+          <div class="con resume">
+            <div class="card front">
+              <p>contact me!</p>
+            </div>
+            <div class="card back">
+              <a
+                href="./file/young_resume.pdf"
+                title="이력서 바로보기"
+                target="_blank"
+                rel="noopener noreferrer"
+                >이력서 바로보기</a
+              >
+            </div>
+          </div>
+          <div class="con email">
+            <div class="card front"></div>
+            <div class="card back">
+              <a href="mailto:youjy1201@gmail.com" title="이메일 보내기"
+                >youjy1201@gmail.com</a
+              >
+            </div>
+          </div>
+          <div class="con phone">
+            <div class="card front">
+              <span><i class="fas fa-phone"></i></span>
+            </div>
+            <div class="card back">
+              <a href="tel:010-3104-7418" title="전화하기">010-3104-7418</a>
+            </div>
+          </div>
+        </div>
+      </article>
+    </main>
+
+    <!-- 푸터 -->
+    <footer>
+      <!-- 탑버튼 -->
+      <a href="#" title="상단으로 가기" class="t_btn">
+        <i class="fas fa-angle-up"></i>
+        TOP
+      </a>
+      <address>
+        본 페이지는 상업적 목적이 아닌 개인 포트폴리오용으로 제작되었습니다.<br />
+        copyrightⓒ 2024 RYU JINYOUNG All rights reserved.
+      </address>
+    </footer>
+  </body>
+</html>
